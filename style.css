@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 
 :root{
-    --orange:#ffa500
+    --orange:#ffa500;
+    -bg-color: #1a1a1a;
+    --text-color: #fff;
+    
 
 }
-*{
-    font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all 0.3s ease;
 }
 
 
@@ -46,12 +51,11 @@ html::-webkit-scrollbar-thumb{
     background: orange;
 
 }
-
-body{
-    background: #111;
-    overflow-x: hidden;
-    padding-left:35rem;
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
 }
+
 
 section{
     min-height: 100vh;
@@ -227,6 +231,17 @@ header .navbar ul li a:hover{
 
 .home h1 span{
     color: var(--orange);
+     position: relative;
+}
+.home h1 span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    border-left: 2px solid var(--orange);
+    animation: typing 4s steps(12) infinite;
 }
 
 .home p{
@@ -459,6 +474,35 @@ header .navbar ul li a:hover{
     padding-right: 1rem;
     color: var(--orange);
 }
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
 
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+header .user img {
+    transition: all 0.3s ease;
+}
+
+header .user img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio .box-container .box {
+    transition: all 0.3s ease;
+}
+
+.portfolio .box-container .box:hover {
+    transform: translateY(-10px);
+}
 
 
