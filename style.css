@@ -482,18 +482,3 @@ header .navbar ul li a:hover{
         background-color: #222; /* Slight background color for readability */
     }
 }
-copyright {
-    text-align: center;
-    color: #bab6b6;
-    margin-top: 20px;
-    font-size: 2rem; /* Adjust font size if needed */
-    transform: translateY(65vh);
-    position: absolute;
-    width: 100%;
-}
-
-.copyright p {
-    margin: 0;
-    padding: 10px 0;
-}
-
