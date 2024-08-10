@@ -229,11 +229,6 @@ header .navbar ul li a:hover{
     color: var(--orange);
 }
 
-.home p{
-    font-size: 2rem;
-    color:#eee;
-    padding: 1rem 0;
-}
 
 .about .row{
     display: flex;
@@ -458,5 +453,33 @@ header .navbar ul li a:hover{
 .content .row .content .info h3 i {
     padding-right: 1rem;
     color: var(--orange);
+}
+
+/* General Styles for Responsive Pre */
+.responsive-pre {
+    white-space: normal; /* Allow content to wrap normally */
+    background-color:#222; /* Transparent background */
+    padding: 0px; /* No padding */
+    border-radius: 11px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(241, 135, 5, 0.1); /* Subtle shadow */
+    font-size: 1.5rem; /* Base font size */
+    line-height: 1.5; /* Line height for better readability */
+    overflow-x: auto; /* Horizontal scroll if needed */
+    color: #fff; /* Text color */
+    text-align: justify; /* Justify the text */
+    margin: 10px auto; /* Center the div */
+    max-width: 95%; /* Full width on mobile */
+}
+
+/* Adjustments for Mobile Screens (< 768px) */
+@media only screen and (max-width: 767px) {
+    .responsive-pre {
+        font-size: 1rem; /* Smaller font size for small screens */
+        line-height: 1.4; /* Slightly tighter line spacing */
+        padding: 10px; /* Add some padding on mobile */
+        box-shadow: none; /* Remove box shadow on mobile */
+        text-align: justify; /* Ensure text is justified */
+        background-color: #222; /* Slight background color for readability */
+    }
 }
 
