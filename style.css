@@ -376,27 +376,25 @@ header .navbar ul li a:hover{
 }
 
 
-.media-icons{
+.media-icons {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    transform: translateY(65vh);
+    margin: 2rem auto 0 auto; /* Adjust the margin to position below the address */
 }
 
-
-.media-icons a{
-    position: relative ;
+.media-icons a {
+    position: relative;
     color: #bab6b6;
-    font-size: 26px;
-
+    font-size: 2.6rem;
+    transition: transform 0.3s ease;
 }
 
-.media-icons a:not(:last-child){
-    margin-right: 60px;
+.media-icons a:not(:last-child) {
+    margin-right: 3rem; /* Adjust the spacing between icons */
 }
 
-.media-icons a:hover{
+.media-icons a:hover {
     transform: scale(1.5);
 }
 
@@ -435,6 +433,13 @@ header .navbar ul li a:hover{
 
 
 }
+.contact .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 
 .content .row .content .info h3 i{
     padding-right:1rem ;
@@ -457,18 +462,18 @@ header .navbar ul li a:hover{
 
 /* General Styles for Responsive Pre */
 .responsive-pre {
-    white-space: normal; /* Allow content to wrap normally */
-    background-color:#222; /* Transparent background */
+    /* Allow content to wrap normally */
+    background-color:#130f0f; /* Transparent background */
     padding: 0px; /* No padding */
-    border-radius: 11px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(241, 135, 5, 0.1); /* Subtle shadow */
+    border-radius: 9px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(250, 139, 3, 0.1); /* Subtle shadow */
     font-size: 1.5rem; /* Base font size */
     line-height: 1.5; /* Line height for better readability */
     overflow-x: auto; /* Horizontal scroll if needed */
     color: #fff; /* Text color */
     text-align: justify; /* Justify the text */
     margin: 10px auto; /* Center the div */
-    max-width: 95%; /* Full width on mobile */
+    max-width: 300%; /* Full width on mobile */
 }
 
 /* Adjustments for Mobile Screens (< 768px) */
@@ -477,8 +482,96 @@ header .navbar ul li a:hover{
         font-size: 1rem; /* Smaller font size for small screens */
         line-height: 1.4; /* Slightly tighter line spacing */
         padding: 10px; /* Add some padding on mobile */
-        box-shadow: none; /* Remove box shadow on mobile */
+        box-shadow: 0 0 10px rgba(214, 149, 68, 0.1);; /* Remove box shadow on mobile */
         text-align: justify; /* Ensure text is justified */
-        background-color: #222; /* Slight background color for readability */
+        background-color:#130f0f;; /* Slight background color for readability */
     }
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    color: var(--orange);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #222;
+    border: 0.1rem solid #333;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: var(--orange);
+}
+
+#contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+#contact-form button:hover {
+    background-color: #ff8c00;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 767px) {
+    #contact-form input,
+    #contact-form textarea {
+        width: 90%;
+    }
+
+    #contact h2 {
+        font-size: 2.5rem;
+    }
+}
+
+footer {
+    background-color:#130f0f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(250, 139, 3, 0.1); 
 }
