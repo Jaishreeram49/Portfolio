@@ -229,7 +229,7 @@ header .navbar ul li a:hover{
     color: var(--orange);
 }
 
-.home pre{
+.home p{
     font-size: 2rem;
     color:#eee;
     padding: 1rem 0;
