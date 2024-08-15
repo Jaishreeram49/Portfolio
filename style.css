@@ -480,10 +480,10 @@ header .navbar ul li a:hover{
 @media only screen and (max-width: 767px) {
     .responsive-pre {
         font-size: 1rem; /* Smaller font size for small screens */
-        line-height: 1.4; /* Slightly tighter line spacing */
+        line-height: 1; /* Slightly tighter line spacing */
         padding: 10px; /* Add some padding on mobile */
         box-shadow: 0 0 10px rgba(214, 149, 68, 0.1);; /* Remove box shadow on mobile */
-        text-align: justify; /* Ensure text is justified */
+        text-align: center; /* Ensure text is justified */
         background-color:#130f0f;; /* Slight background color for readability */
     }
 }
